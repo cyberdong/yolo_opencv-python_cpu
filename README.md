@@ -6,6 +6,7 @@ Implement yolo v3 and v4 using opencv-python w/o GPU.
 Data used in this project:
 
 https://pjreddie.com/media/files/yolov3.weights
+
 https://pjreddie.com/media/files/yolov3-tiny.weights
 https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolov3.cfg
 https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names
