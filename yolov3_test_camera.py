@@ -87,3 +87,4 @@ while(True):
     if c == 27:
         capture.release()
         break
+cv.destroyAllWindows()
