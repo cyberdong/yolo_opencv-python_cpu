@@ -4,7 +4,7 @@ import os
 import time
 
 
-yolo_dir = os.path.join(os.environ['HOME'], 'yolov3_weights_cfg_names') # yolo路径
+yolo_dir = os.path.join(os.environ['HOME'], 'yolo_weights_cfg_names/yolov3') # yolo路径
 weightsPath = os.path.join(yolo_dir, 'yolov3.weights')  # 权重文件
 configPath = os.path.join(yolo_dir, 'yolov3.cfg')  # 配置文件
 labelsPath = os.path.join(yolo_dir, 'coco.names')  # label名称
@@ -83,7 +83,7 @@ while(True):
     c = cv.waitKey(1) & 0xff
     fps_end = time.time()
     time_consumed = fps_end - fps_start
-    print("[INFO] YOLO took {:.3f} seconds, Total took {:.3f} seconds, FPS = {:.3f}".format(end - start, time_consumed, 1/time_consumed)) 
+    print("[INFO] YOLO took {:.3f} seconds, Total took {:.3f} seconds, FPS = {:.3f}".format(end - start, time_consumed, 1/time_consumed))
     if c == 27:
         capture.release()
         break
